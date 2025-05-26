@@ -1,10 +1,20 @@
 <?php
-require_once __DIR__ . '/includes/functions.php';
+require_once __DIR__ . '/includes/config.php';
 
 session_start();
-session_unset();
+
+// Знищуємо всі дані сесії
+$_SESSION = [];
 session_destroy();
 
-header("Location: /login.php?success=logged_out");
+// Видаляємо куки
+setcookie('remembered_username', '', [
+    'expires' => time() - 3600,
+    'path' => '/',
+    'secure' => true,
+    'httponly' => true
+]);
+
+header("Location: login.php");
 exit();
 ?>

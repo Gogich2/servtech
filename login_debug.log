@@ -1,0 +1,19 @@
+=== Login Attempt ===
+Time: 2025-05-26 23:43:43
+Username: egor.spivak02@gmail.com
+User found: Array
+(
+    [id] => 1
+    [username] => egor.spivak02@gmail.com
+    [password] => $2y$10$sYytrgDXyatpAuo4UQjTbuHDY1W3NjonKTv81og0mM2pFuujTwBRO
+    [access_level] => admin
+    [is_blocked] => 0
+    [created_at] => 2025-05-24 14:59:15
+)
+
+Password verification: SUCCESS
+Login SUCCESS
+=== Login Attempt ===
+Time: 2025-05-26 23:44:02
+=== Login Attempt ===
+Time: 2025-05-26 23:44:06

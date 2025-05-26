@@ -1,0 +1,114 @@
+[2025-05-26 23:54:32] === Login Request Started ===
+[2025-05-26 23:54:32] Remote IP: ::1
+[2025-05-26 23:54:32] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0
+[2025-05-26 23:54:32] === Login Request Completed ===
+[2025-05-26 23:54:41] === Login Request Started ===
+[2025-05-26 23:54:41] Remote IP: ::1
+[2025-05-26 23:54:41] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0
+[2025-05-26 23:54:41] Login attempt for username: 'egor.spivak02@gmail.com'
+[2025-05-26 23:54:41] Remember me: Yes
+[2025-05-26 23:54:41] User found in database. User ID: 1
+[2025-05-26 23:54:41] Account status: ACTIVE
+[2025-05-26 23:54:41] Stored password hash: $2y$10$sYytrgDXyatpAuo4UQjTbuHDY1W3NjonKTv81og0mM2pFuujTwBRO
+[2025-05-26 23:54:41] Password verification: SUCCESS
+[2025-05-26 23:54:41] Session created for user ID: 1
+[2025-05-26 23:54:41] Remember me cookie set
+[2025-05-26 23:54:41] DATABASE ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'last_login' in 'field list'
+[2025-05-26 23:54:41] === Login Request Started ===
+[2025-05-26 23:54:41] Remote IP: ::1
+[2025-05-26 23:54:41] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0
+[2025-05-26 23:54:41] === Login Request Completed ===
+[2025-05-27 00:17:34] === Login Request Started ===
+[2025-05-27 00:17:34] Remote IP: ::1
+[2025-05-27 00:17:34] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0
+[2025-05-27 00:17:34] === Login Request Completed ===
+[2025-05-27 00:17:43] === Login Request Started ===
+[2025-05-27 00:17:43] Remote IP: ::1
+[2025-05-27 00:17:43] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0
+[2025-05-27 00:17:43] Login attempt for username: 'krab2'
+[2025-05-27 00:17:43] Remember me: Yes
+[2025-05-27 00:17:43] User found in database. User ID: 3
+[2025-05-27 00:17:43] Account status: ACTIVE
+[2025-05-27 00:17:43] Stored password hash: $2y$10$uRvmuU2TldpMDDONmF4odeijZZ7lVzj7Sy3uBDDUi.P06VtZMGbjG
+[2025-05-27 00:17:43] Password verification: FAILED
+[2025-05-27 00:17:43] Login failed: Invalid credentials
+[2025-05-27 00:17:45] === Login Request Started ===
+[2025-05-27 00:17:45] Remote IP: ::1
+[2025-05-27 00:17:45] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0
+[2025-05-27 00:17:45] === Login Request Completed ===
+[2025-05-27 00:18:01] === Login Request Started ===
+[2025-05-27 00:18:01] Remote IP: ::1
+[2025-05-27 00:18:01] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0
+[2025-05-27 00:18:01] Login attempt for username: 'krab2'
+[2025-05-27 00:18:01] Remember me: Yes
+[2025-05-27 00:18:01] User found in database. User ID: 3
+[2025-05-27 00:18:01] Account status: ACTIVE
+[2025-05-27 00:18:01] Stored password hash: $2y$10$uRvmuU2TldpMDDONmF4odeijZZ7lVzj7Sy3uBDDUi.P06VtZMGbjG
+[2025-05-27 00:18:02] Password verification: SUCCESS
+[2025-05-27 00:18:02] Session variables set
+[2025-05-27 00:18:02] Failed to update last_login: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'last_login' in 'field list'
+[2025-05-27 00:18:02] Remember token set
+[2025-05-27 00:18:02] Redirecting to: index.php
+[2025-05-27 00:18:04] === Login Request Started ===
+[2025-05-27 00:18:04] Remote IP: ::1
+[2025-05-27 00:18:04] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0
+[2025-05-27 00:18:04] CSRF token generated
+[2025-05-27 00:18:04] === Login Request Completed ===
+[2025-05-27 00:18:41] === Login Request Started ===
+[2025-05-27 00:18:41] Remote IP: ::1
+[2025-05-27 00:18:41] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0
+[2025-05-27 00:18:41] Login attempt for username: 'egor.spivak02@gmail.com'
+[2025-05-27 00:18:41] Remember me: Yes
+[2025-05-27 00:18:41] User found in database. User ID: 1
+[2025-05-27 00:18:41] Account status: ACTIVE
+[2025-05-27 00:18:41] Stored password hash: $2y$10$sYytrgDXyatpAuo4UQjTbuHDY1W3NjonKTv81og0mM2pFuujTwBRO
+[2025-05-27 00:18:41] Password verification: FAILED
+[2025-05-27 00:18:41] Login failed: Invalid credentials
+[2025-05-27 00:18:43] === Login Request Started ===
+[2025-05-27 00:18:43] Remote IP: ::1
+[2025-05-27 00:18:43] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0
+[2025-05-27 00:18:43] === Login Request Completed ===
+[2025-05-27 00:18:50] === Login Request Started ===
+[2025-05-27 00:18:50] Remote IP: ::1
+[2025-05-27 00:18:50] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0
+[2025-05-27 00:18:50] Login attempt for username: 'egor.spivak02@gmail.com'
+[2025-05-27 00:18:50] Remember me: Yes
+[2025-05-27 00:18:50] User found in database. User ID: 1
+[2025-05-27 00:18:50] Account status: ACTIVE
+[2025-05-27 00:18:50] Stored password hash: $2y$10$sYytrgDXyatpAuo4UQjTbuHDY1W3NjonKTv81og0mM2pFuujTwBRO
+[2025-05-27 00:18:51] Password verification: SUCCESS
+[2025-05-27 00:18:51] Session variables set
+[2025-05-27 00:18:51] Failed to update last_login: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'last_login' in 'field list'
+[2025-05-27 00:18:51] Remember token set
+[2025-05-27 00:18:51] Redirecting to: admin.php
+[2025-05-27 00:19:02] === Login Request Started ===
+[2025-05-27 00:19:02] Remote IP: ::1
+[2025-05-27 00:19:02] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0
+[2025-05-27 00:19:02] === Login Request Completed ===
+[2025-05-27 00:19:10] === Login Request Started ===
+[2025-05-27 00:19:10] Remote IP: ::1
+[2025-05-27 00:19:10] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0
+[2025-05-27 00:19:10] Login attempt for username: 'krab2'
+[2025-05-27 00:19:10] Remember me: Yes
+[2025-05-27 00:19:10] User found in database. User ID: 3
+[2025-05-27 00:19:10] Account status: ACTIVE
+[2025-05-27 00:19:10] Stored password hash: $2y$10$uRvmuU2TldpMDDONmF4odeijZZ7lVzj7Sy3uBDDUi.P06VtZMGbjG
+[2025-05-27 00:19:11] Password verification: FAILED
+[2025-05-27 00:19:11] Login failed: Invalid credentials
+[2025-05-27 00:19:13] === Login Request Started ===
+[2025-05-27 00:19:13] Remote IP: ::1
+[2025-05-27 00:19:13] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0
+[2025-05-27 00:19:13] === Login Request Completed ===
+[2025-05-27 00:19:34] === Login Request Started ===
+[2025-05-27 00:19:34] Remote IP: ::1
+[2025-05-27 00:19:34] User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0
+[2025-05-27 00:19:34] Login attempt for username: 'krab2'
+[2025-05-27 00:19:34] Remember me: Yes
+[2025-05-27 00:19:34] User found in database. User ID: 3
+[2025-05-27 00:19:34] Account status: ACTIVE
+[2025-05-27 00:19:34] Stored password hash: $2y$10$uRvmuU2TldpMDDONmF4odeijZZ7lVzj7Sy3uBDDUi.P06VtZMGbjG
+[2025-05-27 00:19:34] Password verification: SUCCESS
+[2025-05-27 00:19:34] Session variables set
+[2025-05-27 00:19:34] Failed to update last_login: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'last_login' in 'field list'
+[2025-05-27 00:19:34] Remember token set
+[2025-05-27 00:19:34] Redirecting to: index.php

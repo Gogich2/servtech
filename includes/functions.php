@@ -1,78 +1,50 @@
 <?php
-/**
- * Виводить повідомлення про помилки/успіх
- */
-function display_messages() {
-    if (!empty($_GET['error'])) {
-        $errors = [
-            'account_blocked' => 'Ваш обліковий запис заблоковано!',
-            'access_denied' => 'Доступ заборонено!',
-            'login_failed' => 'Невірний логін або пароль!'
-        ];
-        
-        if (isset($errors[$_GET['error']])) {
-            echo '<div class="alert alert-danger">' . htmlspecialchars($errors[$_GET['error']]) . '</div>';
-        }
+function generate_csrf_token() {
+    if (empty($_SESSION['csrf_token'])) {
+        $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
     }
-
-    if (!empty($_GET['success'])) {
-        $successes = [
-            'registered' => 'Реєстрація успішна! Тепер ви можете увійти.',
-            'logged_out' => 'Ви успішно вийшли з системи.'
-        ];
-        
-        if (isset($successes[$_GET['success']])) {
-            echo '<div class="alert alert-success">' . htmlspecialchars($successes[$_GET['success']]) . '</div>';
-        }
-    }
+    return $_SESSION['csrf_token'];
 }
 
-
-if (!function_exists('e')) {
-    /**
-     * Escape output to prevent XSS attacks
-     * @param string $string The string to escape
-     * @return string Escaped string
-     */
-    function e($string) {
-        return htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
-    }
+function validate_csrf_token($token) {
+    return isset($_SESSION['csrf_token']) && hash_equals($_SESSION['csrf_token'], $token);
 }
 
-/**
- * Генерує HTML для пагінації
- */
-function generate_pagination($total_items, $items_per_page, $current_page, $base_url) {
-    $total_pages = ceil($total_items / $items_per_page);
-    
-    if ($total_pages <= 1) return '';
-
-    $html = '<nav><ul class="pagination">';
-    
-    // Попередня сторінка
-    if ($current_page > 1) {
-        $html .= '<li class="page-item"><a class="page-link" href="' . $base_url . '&page=' . ($current_page - 1) . '">&laquo;</a></li>';
-    }
-
-    // Сторінки
-    for ($i = 1; $i <= $total_pages; $i++) {
-        $active = $i == $current_page ? ' active' : '';
-        $html .= '<li class="page-item' . $active . '"><a class="page-link" href="' . $base_url . '&page=' . $i . '">' . $i . '</a></li>';
-    }
-
-    // Наступна сторінка
-    if ($current_page < $total_pages) {
-        $html .= '<li class="page-item"><a class="page-link" href="' . $base_url . '&page=' . ($current_page + 1) . '">&raquo;</a></li>';
-    }
-
-    $html .= '</ul></nav>';
-    return $html;
-}
-
-/**
- * Екранує HTML вивід
- */
 function e($string) {
     return htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
+}
+
+function display_messages() {
+    if (!empty($_GET['error'])) {
+        $error = match($_GET['error']) {
+            'login_failed' => 'Невірний логін або пароль',
+            'account_blocked' => 'Обліковий запис заблоковано',
+            default => 'Сталася помилка'
+        };
+        echo '<div class="alert alert-danger">' . e($error) . '</div>';
+    }
+    
+    if (!empty($_GET['success'])) {
+        $success = match($_GET['success']) {
+            'registered' => 'Реєстрація успішна! Тепер ви можете увійти',
+            default => 'Операція успішна'
+        };
+        echo '<div class="alert alert-success">' . e($success) . '</div>';
+    }
+}
+
+function init_visit_counter() {
+    if (!isset($_SESSION['visits'])) {
+        $_SESSION['visits'] = 1;
+    } else {
+        $_SESSION['visits']++;
+    }
+}
+
+function password_strength_check($password) {
+    if (strlen($password) < 8) return 'Мінімум 8 символів';
+    if (!preg_match('/[A-Z]/', $password)) return 'Додайте великі літери';
+    if (!preg_match('/[0-9]/', $password)) return 'Додайте цифри';
+    return null;
 }
 ?>
