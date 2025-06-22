@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses>
+    <course>
+        <id>1</id>
+        <title>Основи програмування</title>
+        <duration>40 годин</duration>
+    </course>
+    <course>
+        <id>2</id>
+        <title>Веб-розробка</title>
+        <duration>60 годин</duration>
+    </course>
+</courses>
